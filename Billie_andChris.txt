@@ -1,6 +1,34 @@
 Billie & Chris tasks
 
+-Easiest way to have people accessing LAMMPS? 
+    I think there is no way to use lammps without downloading the src code. 
+    Hopefully this should be fine with 12 people per group - if we have instructions for downloading (like in np-toolkit) then 1 person will manage
+
 -take the flat membrane
 -comment the file 
 -set task - patchy particle being engulfed
 -make sure there is enough time on the simulations
+
+
+-Fix epsilon = 10? 15?
+-Allow positions to change (comment them)
+
+
+Description of task:
+
+- What is the most efficient placement of 24 patches on a nanoparticle for a flat membrane to engulf the nanoparticle? 
+
+Hints:
+- Useful to be able to do statistics. Trajectories can be analysed using Ovito tools (put example of 'wrapping.py' script?
+- It may be useful to do multiple random seeds of the same initial conditions
+- Patch positions are specified in /data/sp-data.data after the 'Atoms' header. It has the format :
+ID Type x y z . . . vx vy vz
+1 1 -20.745 8.71864 -0.0204975 1 1 0 0.0439223 -0.0189721 0.998855
+
+All particles of type > 2 are patches. They are placed on the sphere which is type 3 and has radius 4
+
+
+
+
+Bonus :
+-You can also change their interactions wrt one another, but their total interaction (sum of epsilon's) cannot exceed 24x15=600
