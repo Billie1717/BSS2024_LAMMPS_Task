@@ -1,0 +1,6 @@
+Billie & Chris tasks
+
+-take the flat membrane
+-comment the file 
+-set task - patchy particle being engulfed
+-make sure there is enough time on the simulations
